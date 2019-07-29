@@ -4,25 +4,25 @@
 
 ### JavaScript
 
-[传递只有一种]('./ES/值传递.md')
+[传递只有一种](./ES/值传递.md)
 
-[异步编程（1）：Promise]('./ES/promise.md')
+[异步编程（1）：Promise](./ES/promise.md)
 
-[异步编程（2）：async/await]('./ES/async.md')
+[异步编程（2）：async/await](./ES/async.md)
 
-[关于深拷贝]('./ES/copy.md')
+[关于深拷贝](./ES/copy.md)
 
 
 
 ### 构建
 
-[使用gulp构建一个sdk工具]('./build/sdk.md')
+[使用gulp构建一个sdk工具](build/sdk.md)
 
 
 
 ### CSS
 
-[彻底搞清楚css权重]('./css/css权重.md')
+[彻底搞清楚css权重](css/css权重.md)
 
 
 
