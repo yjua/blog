@@ -16,7 +16,9 @@
 
 ### 构建
 
-[使用gulp构建一个sdk工具](build/sdk.md)
+[使用gulp构建一个sdk脚手架](build/sdk.md)
+[babel设计原理](build/babel.md)
+[babel核心组件](build/babel-plugins.md)
 
 
 
