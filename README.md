@@ -1,4 +1,4 @@
-# 个人博客
+记录一些重要的或者学习的知识点，文笔随意。记录成长的轨迹
 
 
 
@@ -16,7 +16,9 @@
 
 ### 构建
 
-[使用gulp构建一个sdk脚手架](build/sdk.md)
+[定制sdk打包工具（gulp版本）](build/sdk-gulp.md)
+
+[定制sdk打包工具（rollup版本）](build/sdk-rollup.md)
 
 [babel设计原理](build/babel.md)
 
