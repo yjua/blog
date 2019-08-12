@@ -36,7 +36,7 @@ function cal(n){
 
 
 
-#### O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) 
+#### O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) 
 
 ```javascript
 function cal(n){
