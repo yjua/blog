@@ -54,11 +54,11 @@ function cal(n){
 
 以上代码，函数体内有9行代码，第1、2、3执行一次共 3 * line_time。4、5行各执行n次。共 2n * line_time。6、7行代码各执行 n * n * line_time。第8行是 n * line_time。第9行是 line_time。
 
-则总共的时间是 T(n) = 2 * [$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) * line_time + 3n * line_time + 4 * line_time。简写为 2 * [$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) +3n + 4。
+则总共的时间是 T(n) = 2 * ![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) * line_time + 3n * line_time + 4 * line_time。简写为 2 * ![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) +3n + 4。
 
-这是一个多项式。一般按最长的时间去算就是 [$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) 。
+这是一个多项式。一般按最长的时间去算就是 ![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D) 。
 
-同样的，我们去掉常数。认为 T(n) = O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))
+同样的，我们去掉常数。认为 T(n) = O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))
 
 
 
@@ -103,9 +103,9 @@ sum1 是循环100次，相对于可能无限的n来说，只要是一个确定�
 
 sum2则是O(n)。
 
-sum3是O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))。
+sum3是O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))。
 
-综合三段代码复杂度，我们取最大的量级，即O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))。
+综合三段代码复杂度，我们取最大的量级，即O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))。
 
 
 
@@ -134,7 +134,7 @@ function k(n){
 }
 ```
 
-根据嵌套法则，T(n) = O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) 。
+根据嵌套法则，T(n) = O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) 。
 
 
 
@@ -146,8 +146,8 @@ function k(n){
 + O(logn) 对数
 + O(n) 线性
 + O(nlogn) 线性对数
-+ O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) O([$n^3$](http://latex.codecogs.com/gif.latex?n%5E%7B3%7D)) O([$n^k$](http://latex.codecogs.com/gif.latex?n%5E%7Bk%7D))   平方、立方、k方
-+ O([$2^n$](http://latex.codecogs.com/gif.latex?2%5E%7Bn%7D)) 指数
++ O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D)) O(![$n^3$](http://latex.codecogs.com/gif.latex?n%5E%7B3%7D)) O(![$n^k$](http://latex.codecogs.com/gif.latex?n%5E%7Bk%7D))   平方、立方、k方
++ O(![$2^n$](http://latex.codecogs.com/gif.latex?2%5E%7Bn%7D)) 指数
 + O(n!) 阶乘
 
 
@@ -169,11 +169,11 @@ while(i < n){
 
 这段代码的复杂度关键是在循环了多少次。初始值为1，最大不能超过n。则每次值罗列如下。
 
-[$2^0$](http://latex.codecogs.com/gif.latex?2%5E%7B0%7D)  、[$2^1$](http://latex.codecogs.com/gif.latex?2%5E%7B1%7D) 、 [$2^2$](http://latex.codecogs.com/gif.latex?2%5E%7B2%7D) 、 [$2^3$](http://latex.codecogs.com/gif.latex?2%5E%7B3%7D)  。。。[$2^x$](http://latex.codecogs.com/gif.latex?2%5E%7Bx%7D)  <= n;     
+![$2^0$](http://latex.codecogs.com/gif.latex?2%5E%7B0%7D)  、![$2^1$](http://latex.codecogs.com/gif.latex?2%5E%7B1%7D) 、 ![$2^2$](http://latex.codecogs.com/gif.latex?2%5E%7B2%7D) 、 ![$2^3$](http://latex.codecogs.com/gif.latex?2%5E%7B3%7D)  。。。![$2^x$](http://latex.codecogs.com/gif.latex?2%5E%7Bx%7D)  <= n;     
 
 x的值就是我们想要知道的循环次数。为了方便计算，我们用`=` 来代替 `<=` 。
 
-即 [$2^x$](http://latex.codecogs.com/gif.latex?2%5E%7Bx%7D) = n ; x = [$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn) 。所以时间复杂度为 O([$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn))。
+即 ![$2^x$](http://latex.codecogs.com/gif.latex?2%5E%7Bx%7D) = n ; x = ![$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn) 。所以时间复杂度为 O(![$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn))。
 
 
 
@@ -186,7 +186,7 @@ while(i < n){
 }
 ```
 
-则复杂度为 [$log_3n$](http://latex.codecogs.com/gif.latex?log_%7B3%7Dn) 。而对数是可以相互转换底数的。 [$log_3n$](http://latex.codecogs.com/gif.latex?log_%7B3%7Dn) = [$log_32$](http://latex.codecogs.com/gif.latex?log_%7B3%7D2) * [$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn) 。而[$log_32$](http://latex.codecogs.com/gif.latex?log_%7B3%7D2) 是常量，我们可以忽略。所以我们一般忽略底数，统一记为 $logn$。
+则复杂度为 ![$log_3n$](http://latex.codecogs.com/gif.latex?log_%7B3%7Dn) 。而对数是可以相互转换底数的。 ![$log_3n$](http://latex.codecogs.com/gif.latex?log_%7B3%7Dn) = ![$log_32$](http://latex.codecogs.com/gif.latex?log_%7B3%7D2) * ![$log_2n$](http://latex.codecogs.com/gif.latex?log_%7B2%7Dn) 。而![$log_32$](http://latex.codecogs.com/gif.latex?log_%7B3%7D2) 是常量，我们可以忽略。所以我们一般忽略底数，统一记为 $logn$。
 
 
 
@@ -217,7 +217,7 @@ function a(n){
 
 + O(1)
 + O(n)
-+ O([$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))
++ O(![$n^2$](http://latex.codecogs.com/gif.latex?n%5E%7B2%7D))
 
 空间复杂度对数级别的 O($logn$)  O($nlogn$) 几乎用不到，可以不用考虑。 
 
