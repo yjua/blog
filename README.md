@@ -40,6 +40,11 @@
 [利用subtree提交到不同的仓库](git/subtree.md)
 
 
+### VUE
+
+[Vue非父子组件数据通讯](vue/bus.md)
+
+
 ### 工具类
 
 [sublimeText3 一些常用的插件和配置信息](./tools/sublime.md)
