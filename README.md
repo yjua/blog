@@ -1,18 +1,18 @@
 记录一些重要的或者学习的知识点，文笔随意。记录成长的轨迹
 
-
+webSite https://yjua.github.io/blog/#/
 
 ### JavaScript
 
-[传递只有一种](./ES/值传递.md)
+[传递只有一种](ES/值传递.md)
 
-[异步编程（1）：Promise](./ES/promise.md)
+[异步编程（1）：Promise](ES/promise.md)
 
-[异步编程（2）：async/await](./ES/async.md)
+[异步编程（2）：async/await](ES/async.md)
 
-[关于深拷贝](./ES/copy.md)
+[关于深拷贝](ES/copy.md)
 
-[【知识点】+运算符](./ES/add.md)
+[【知识点】+运算符](ES/add.md)
 
 
 ### 算法
@@ -49,7 +49,7 @@
 
 ### 工具类
 
-[sublimeText3 一些常用的插件和配置信息](./tools/sublime.md)
+[sublimeText3 一些常用的插件和配置信息](tools/sublime.md)
 
 
 
