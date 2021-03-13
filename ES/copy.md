@@ -4,7 +4,7 @@
 
  
 
-### 浅拷贝
+## 浅拷贝
 
 浅拷贝就比较简单了，就是只对第一层进行复制。但是我们要注意，浅拷贝`不是赋值`，`不是赋值`，`不是赋值`。重要的基础性的东西要强调下。
 
@@ -29,11 +29,11 @@ var c = Object.assign(a,b);
 
  
 
-### 深拷贝
+## 深拷贝
 
 深拷贝就复杂了些，下面列举一下常用的几个方法，以及中间我们会遇到什么坑。
 
-#### **JSON**
+### **JSON**
 
 ```javascript
 JSON.parse(JSON.stringify(obj))
@@ -101,7 +101,7 @@ var copy = JSON.parse(JSON.stringify(obj))
 
  
 
-#### **实现**
+### **实现**
 
 那我们现在来尝试着通过递归来实现一个深拷贝。
 
@@ -147,7 +147,7 @@ function deepClone(target,hash = new WeakMap()){
 
 
 
-### 总结
+## 总结
 
 最后我们来总结一下，深拷贝到底是在拷贝什么？
 
@@ -161,7 +161,7 @@ function deepClone(target,hash = new WeakMap()){
 
 
 
-### 建议
+## 建议
 
 + 当然在正常的使用中，数组和普通对象就足够了。建议序列号和反序列化。
 
@@ -172,6 +172,6 @@ function deepClone(target,hash = new WeakMap()){
 
  
 
-### 参考链接
+## 参考链接
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign

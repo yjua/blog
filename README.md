@@ -2,7 +2,7 @@
 
 webSite https://yjua.github.io/blog/#/
 
-### JavaScript
+## JavaScript
 
 [传递只有一种](ES/值传递.md)
 
@@ -15,12 +15,8 @@ webSite https://yjua.github.io/blog/#/
 [【知识点】+运算符](ES/add.md)
 
 
-### 算法
 
-[时间复杂度 & 空间复杂度](algorithm/analysis.md)
-
-
-### 构建
+## 构建
 
 [定制sdk打包工具（gulp版本）](build/sdk-gulp.md)
 
@@ -32,24 +28,19 @@ webSite https://yjua.github.io/blog/#/
 
 
 
-### CSS
+## CSS
 
 [彻底搞清楚css权重](css/css权重.md)
 
-
-### GIT
-
-[利用subtree提交到不同的仓库](git/subtree.md)
-
-
-### VUE
+## VUE
 
 [Vue非父子组件数据通讯](vue/bus.md)
 
 
-### 工具类
+## 工具类
 
 [sublimeText3 一些常用的插件和配置信息](tools/sublime.md)
+
 [项目配置Git钩子实现项目格式化](tools/git-hooks.md)
 
 

@@ -15,18 +15,23 @@
     .docsify-copy-code-button{
       font-size: 6px!important;
     }
+    .page_toc{
+      top: 100px;
+    }
   </style>
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'YJua的日常整理',
+      name: 'YJua的空间',
       repo: 'http://github.com/yjua/blog/',
       loadSidebar: true,
       loadNavbar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 0,
       coverpage: true,
+      auto2top: true,
       count:{
         countable:true,
         fontsize:'0.9em',
@@ -39,6 +44,17 @@
         placeholder: '搜索',
         noData: '找不到结果',
         depth: 3
+      },
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2, h3',
+        title: '目录',
+      },
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: true,
       },
       plugins: [
         function (hook) {
@@ -58,12 +74,14 @@
       ]
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- CDN files for docsify-katex -->
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>  
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
 
 </body>
 </html>
