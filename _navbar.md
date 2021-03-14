@@ -3,4 +3,4 @@
 * 小技巧
   * [代码片段](skill/)
   * [shell](shell/)
-  * [GIT](git/)
+  * [GIT](git/index)
