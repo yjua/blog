@@ -7,6 +7,7 @@
     * [插入排序](/algorithm/insert)
     * [快速排序](/algorithm/quick)
     * [希尔排序](/algorithm/hash)
+    * [洗牌算法](/algorithm/shuffle)
 
 * 常用
     * [背包问题](/algorithm/knapsack)

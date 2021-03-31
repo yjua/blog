@@ -248,3 +248,66 @@ document.onpaste = function(){return false}
 
 ```
 
+
+
+## 防抖
+
+```javascript
+// 一定时间范围内如果再次触发，就暂停之前的执行，从新开始计时
+//  应用：搜索框输入内容，等不再输入的时候再做操作
+//       窗口大小改变，等不再改变的时候在做操作
+function debounce(fn,delay){
+  var id;
+  return function(){
+    clearTimeout(id)
+    var ctx = this;
+    var arg = arguments;
+    fn.id = setTimeout(function(){
+      fn.apply(ctx,arg)
+    },delay)
+  }
+}
+```
+
+
+
+## 节流
+
+```javascript
+//在一定的时间范围之内，不管触发几次都执行一次
+// 应用场景：
+// 浏览器滚动的时候，触发更多内容加载请求
+// 按钮点击防止多次触发
+function throttle(fn,time){
+  var id = null;
+  return function(){
+    var ctx = this;
+    var arg = arguments;
+    if(id){ return ; }
+    id = setTimeout(function(){
+      fn.apply(ctx,arg)
+      id = null
+    },time)
+  }
+}
+```
+
+
+
+## bind实现
+
+```javascript
+if(!Function.prototype.bind){
+  Function.prototype.bind = function(thisArg,...arg){
+    var fn = this;
+    if(typeof fn !== 'function'){
+      throw new TypeError('is not a function')
+    }
+    return function(){
+      var args = arg.concat(Array.prototype.slice.call(arguments))
+      return fn.apply(thisArg,args)
+    }
+  }
+}
+```
+
