@@ -376,15 +376,21 @@ function my_flat(arr){
 ```javascript
 function instance_of(l,r){
   let obj = r.prototype
-  l = l.__proto__
+  //l = l.__proto__
+  l = Object.getPrototypeOf(l)
   while(true){
     if(l === obj){
       return true
     }else if(l === null){
       return false
     }
-    l = l.__proto__
+    //l = l.__proto__
+    l = Object.getPrototypeOf(l)
   }
+}
+
+function instance_of(left,right){
+  return right.prototype.isPrototypeOf(left)
 }
 ```
 
@@ -566,5 +572,35 @@ function numFormat(num){
     return res;
 }
 
+```
+
+## new
+
+```javascript
+function isNew(fn,...args){
+  let instance = Object.create(fn.prototype)
+  let res = fn.apply(instance, args)
+  if(res !== null && (typeof res === 'object' || typeof res === 'function')){
+    return res;
+  }else {
+    return instance
+  }
+}
+```
+
+
+
+## 柯利化
+
+```javascript
+function curry(targetFn){
+  return function fn(...args){
+    if(targetFn.length === args.length){
+      return targetFn.apply(null, args)
+    }else{
+      return fn.bind(null, ...args)
+    }
+  }
+}
 ```
 
